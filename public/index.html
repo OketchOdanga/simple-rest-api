@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User API Demo</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>📋 User Manager</h1>
+
+  <div class="card">
+    <h3>➕ Add new user</h3>
+    <form id="userForm">
+      <input type="text" id="name" placeholder="Full name" required>
+      <input type="email" id="email" placeholder="Email address" required>
+      <button type="submit">Create user</button>
+    </form>
+    <div id="formMessage"></div>
+  </div>
+
+  <div class="card">
+    <h3>👥 All users</h3>
+    <ul id="userList" class="user-list">
+      <li class="empty">Loading users...</li>
+    </ul>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
